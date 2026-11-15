@@ -1,6 +1,6 @@
 # FreeESPA 4.4.4
 
-Monitor und Emulator für ESPA 4.4.4 unter Windows. Die Oberfläche läuft lokal im Browser; COM-Port und TCP werden direkt von Windows PowerShell angesprochen. Python, zusätzliche Module und eine separate .NET-Installation sind nicht nötig. Start und Betrieb benötigen keine Administratorrechte.
+Monitor und Emulator für ESPA 4.4.4 unter Windows. Die Oberfläche läuft lokal im Browser; COM-Port und TCP werden direkt von Windows PowerShell angesprochen. Zusätzliche Module und eine separate .NET-Installation sind nicht nötig. Start und Betrieb benötigen keine Administratorrechte.
 
 ## Start
 
@@ -9,7 +9,7 @@ Monitor und Emulator für ESPA 4.4.4 unter Windows. Die Oberfläche läuft lokal
 3. Im Browser `http://127.0.0.1:8765/` öffnen. Die PowerShell-Konsole muss während der Nutzung offen bleiben.
 4. Über **Einstellungen** COM oder TCP wählen und anschließend **Verbinden**.
 
-Der Webserver bindet ausschließlich an `127.0.0.1`. Der ESPA-TCP-Transport kann als Client oder Server betrieben werden. Läuft der Server auf dem Laptop, bindet `0.0.0.0` an alle Netzwerkschnittstellen; der DeskPi-Client muss dann die LAN-IP des Laptops und denselben Port verwenden. Die Windows-Firewall muss eingehende Verbindungen im privaten Netzwerk zulassen. Pro ESPA-Verbindung soll nur eine Seite als Leitstelle/Controller und die andere als Gegenstelle/Device eingestellt sein; bei diesem Aufbau ist der Laptop die Leitstelle und der DeskPi die Gegenstelle. Für COM- und TCP-Verbindungen wird erst nach dem Klick auf **Verbinden** eine Verbindung geöffnet. Falls Port 8765 bereits belegt ist, die laufende Instanz im Browser verwenden oder die andere Instanz beenden. Ein alternativer HTTP-Port lässt sich mit `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\FreeESPA.ps1 -HttpPort 8766` angeben.
+Der Webserver bindet ausschließlich an `127.0.0.1`. Der ESPA-TCP-Transport kann als Client oder Server betrieben werden. Pro ESPA-Verbindung soll nur eine Seite als Leitstelle/Controller und die andere als Gegenstelle/Device eingestellt sein. Für COM- und TCP-Verbindungen wird erst nach dem Klick auf **Verbinden** eine Verbindung geöffnet. Falls Port 8765 bereits belegt ist, die laufende Instanz im Browser verwenden oder die andere Instanz beenden. Ein alternativer HTTP-Port lässt sich mit `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\FreeESPA.ps1 -HttpPort 8766` angeben.
 
 ## Funktionen
 
