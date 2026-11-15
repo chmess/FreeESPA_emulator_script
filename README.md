@@ -18,7 +18,8 @@ Der Webserver bindet ausschließlich an `127.0.0.1`. Der ESPA-TCP-Transport kann
 - ESPA-Leitstelle oder Gegenstelle emulieren; Adressen und Polling-Intervall einstellen
 - Testmeldungen mit Rufadresse, Text, Signalton, Rufart und Priorität vormerken
 - Rohbytes im Emulatorbetrieb manuell senden
-- SOH/ETX-Blöcke, Datensatzfelder, Steuerzeichen und BCC-Prüfung dekodieren
+- SOH/ETX-Blöcke, Datensatzfelder, Steuerzeichen und BCC-Prüfung für RX und TX dekodieren
+- Pollingfehler nach mehr als 20 Sekunden ohne Polling anzeigen und beim nächsten Poll automatisch zurücksetzen
 - Polling/ACK/EOT im Verlauf ein- oder ausblenden, getrennte RX/TX-Zähler anzeigen
 - Verlauf und Zähler zurücksetzen sowie Mitschnitt als JSON exportieren
 
