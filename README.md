@@ -1,2 +1,2 @@
 # FreeESPA_emulator_script
-Free ESPA Emulator as a Poweshellscript
+PowerShell ESPA 4.4.4 Monitor und Emulator für Windows – ohne Administratorrechte.
