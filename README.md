@@ -2,6 +2,14 @@
 
 Monitor und Emulator für ESPA 4.4.4 unter Windows. Die Oberfläche läuft lokal im Browser; COM-Port und TCP werden direkt von Windows PowerShell angesprochen. Zusätzliche Module und eine separate .NET-Installation sind nicht nötig. Start und Betrieb benötigen keine Administratorrechte.
 
+## Screenshots
+
+Diese Momentaufnahmen zeigen die ESPA-Seite des DeskPi-Monitors vom 16.11.2026; die portable Windows-Fassung nutzt dieselben ESPA-Funktionen.
+
+![ESPA-Monitor und Emulator](docs/screenshots/espa-overview.png)
+
+[Verbindungseinstellungen](docs/screenshots/espa-settings.png) · [Testmeldung senden](docs/screenshots/espa-test.png)
+
 ## Start
 
 1. Repository als ZIP herunterladen und entpacken.
